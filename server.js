@@ -8,9 +8,9 @@ const adminRoute = require("./routes/adminRoute");
 const doctorRoute = require("./routes/doctorsRoute");
 const path = require("path");
 
-app.use("/api/user", userRoute);
-app.use("/api/admin", adminRoute);
-app.use("/api/doctor", doctorRoute);
+app.use("https://your-render-app-name.onrender.com/api/user", userRoute);
+app.use("https://your-render-app-name.onrender.com/api/admin", adminRoute);
+app.use("https://your-render-app-name.onrender.com/api/doctor", doctorRoute);
 
 // if (process.env.NODE_ENV === "production") {
 //   app.use("/", express.static("client/build"));
